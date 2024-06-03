@@ -1,0 +1,92 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  /*elijo el fondo que va a tener la pag web*/
+  body {
+    background-image: url("fondo1.jpg");
+    /*centro la imagen , evito que se repita como mosaico 
+    background-attachment: fixed;: Esto fija el fondo, lo que significa que la imagen no se desplazará junto con el contenido cuando haga scroll. 
+    De esta manera,  la imagen permanece fija mientras el contenido se desplaza sobre ella.
+     background-size: cover; la imagen ocupa todo la pantalla */
+    background-position:center ;
+    background-repeat:no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+ 
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.form-register {
+    animation: fadeIn 1s ease-in-out;
+}
+
+  /*diseño el bloque que contiene los label y input */
+  .form-register {
+    width: 400px;
+    background: #24303c;
+    padding: 30px;
+    margin: auto;
+    margin-top: 100px;
+    border-radius: 4px;
+    font-family: 'ariel';
+    color: rgb(255, 255, 255);
+    box-shadow: 7px 13px 37px #000000;
+  }
+  /*diseño el titulo del formulario el tamaño y lo centro*/
+
+  .form-register h2 {
+    font-size: 30px;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  /*diseño los input que estan con los label*/
+  .controls {
+    width: 100%;
+    background: #24303c;
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 16px;
+    /*configuro el borde de el input y la letra que escribe*/
+    border: 1px solid #1f53c5;
+    font-family: 'ariel';
+    font-size: 23px;
+    color: white;
+  }
+/*diseño los botones que relacionan la BD*/
+
+/*usamos el select con el div controls para que en los labels que son claves foraneas salgan los datos de la 
+tabla vinculada, ejemplo en el campo Autor saldran los datos de la tabla autores*/
+
+select {
+  width: 100%;
+  background: #24303c;
+  padding: 10px;
+  border-radius: 4px;
+  margin-bottom: 16px;
+  /*configuro el borde de el input y la letra que escribe*/
+  border: 1px solid #1f53c5;
+  font-family: 'ariel';
+  font-size: 23px;
+  color: white;
+}
+
+
+  .form-register .botons {
+    width: 100%;
+    background: #1f53c5;
+    border: none;
+    padding: 12px;
+    color: white;
+    margin: 16px 0;
+    font-size: 16px;
+  }

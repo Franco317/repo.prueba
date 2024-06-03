@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style3.css">
+    <queree><title>TE VOY A ROBAR TU DATA</title></queree>
+</head>
+<body>
+    <form action="recibe.php"method="post">
+          <!--
+            agregue  class="controls" y class="botons"  en cada input que distinga las funciones 
+            y a la etiqueta <section> le doy una clase que tenga el registro del formulario
+        -->
+    <section class="form-register">    
+        <queree><h2>Carga de Datos</h2></queree>
+
+        <br>
+        <label>
+            Nombre
+        </label>
+        <input class="controls" type="text" name="Nombre">
+        <br>
+        <label>
+            Apellido
+        </label>
+        <input class="controls" type="text" name="Apellido">
+        
+        <br>
+        <label>
+            FecNac
+        </label>
+        <input class="controls" type="date" name="FecNac" />
+        <br>
+
+        <label >
+             DNI
+        </label>
+        <input class="controls" type="text" maxlength="8" minlength="8" placeholder="12345678" name="DNI"/>
+        <br>
+        <label >Barrio  </label>
+        <input class="controls" type="text" name="Barrio"  />
+        <br>
+        <label >Domicilio </label>
+        <input class="controls" type="text" name="Domicilio" placeholder="Calle y Numero" />
+
+        </br>
+       
+           
+        <label >Telefono  </label>
+        <input class="controls" type="number" name="telefono" />
+        <br>
+        <label >Email</label>
+        <input class="controls" type="text" name="email" />
+        <br>
+
+        
+       
+        <input class="botons" type="submit" name="submint" value="Guardar"/>
+        <input class="botons"type="reset" name="reset" value="cancelar">
+
+    </section>    
+    </form>
+    
+</body>
+</html>

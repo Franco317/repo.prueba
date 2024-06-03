@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style2.css">
+    <title>TE VOY A ROBAR TU DATA</title>
+</head>
+<body>
+    <form action="recibeautor.php"method="post">
+        <!--
+            agregue  class="controls" y class="botons"  en cada input que distinga las funciones 
+            y a la etiqueta <section> le doy una clase que tenga el registro del formulario
+        -->
+    <section class="form-register">
+        <h2>Data Autor</h2>
+
+        <br>
+        <label>
+            Nombre
+        </label>
+        <input class="controls" type="text" name="Nombre">
+        <br>
+        <label>
+            Apellido
+        </label>
+        <input class="controls" type="text" name="Apellido">
+        <br>
+        <label>
+            FecNac
+        </label>
+        <input class="controls" type="date" name="FecNac">
+        <br>
+        <label>
+            Nacionalidad
+        </label>
+        <input  class="controls" type="text" name="Nacionalidad">
+        <br>
+
+        <input class="botons" type="submit" name="submint" value="Guardar"/>
+        <input class="botons"  type="reset" name="reset" value="cancelar">
+    </section>
+
+        
+    </form>
+
+</body>
+</html>    
+
+               

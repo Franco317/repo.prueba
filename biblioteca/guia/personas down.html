@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css"> <!--vinculo el archivo css-->
+    <title>TE VOY A ROBAR TUS DATOS</title>
+</head>
+<body>
+    <form action="recibe.php"method="post"><!---->
+        <br>
+        <!--aca realice el cambio -->
+        <!--
+            agregue  class="controls" y class="botons"  en cada input que distinga las funciones 
+            y a la etiqueta <section> le doy una clase que tenga el registro del formulario
+        -->
+        
+    <section class="form-register" >
+        <h2>Carga de Datos</h2>
+        <label>
+            Nombre
+        </label>
+        <input class="controls" type="text" name="Nombre">
+        <br>
+        <label>
+            Apellido
+        </label>
+        <input class="controls" type="text" name="Apellido">
+        
+        <br>
+        <label>
+            FecNac
+        </label>
+        <input class="controls" type="date" name="FecNac" />
+        <br>
+
+        <label >
+             DNI
+        </label>
+        <input class="controls" type="text" maxlength="8" minlength="8" placeholder="12345678" name="DNI"/>
+        <br>
+        <label >Calle  </label>
+        <input class="controls" type="text" name="Calle"  />
+        <label >Numero </label>
+        <input class="controls" type="text" name="Numero" />
+
+        <br>
+        <label > Barrio </label>
+        
+
+        <input  class="controls" type="text" name="Barrio" />
+        <br>
+        <label >Genero  </label>
+        <input  class="controls" type="text" name="Genero" />
+        <br>
+        <label >Telefono  </label>
+        <input  class="controls" type="number" name="telefono" />
+        <br>
+        <label >Email</label>
+        <input  class="controls" type="text" name="email" />
+        <br>
+        <p>si quieres guardar tus datos Presiona GUARDAR </p>
+
+        
+       
+        <input  class="botons"type="submit" name="submint" value="Guardar"/>
+        <input  class="botons" type="reset" name="reset" value="cancelar">
+    </section>
+
+        
+    </form>
+    
+</body>
+</html>
